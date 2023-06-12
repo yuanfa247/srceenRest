@@ -1,0 +1,386 @@
+/*浏览器全局变量*/
+html {
+	/*页面字体大小*/
+	--cssfont: 0.23rem;
+
+	/*各个模块的高度(自适应)*/
+	--cssname: calc(100vh / 4.51);
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+	font-family: 'Microsoft YaHei', 微软雅黑, 'Helvetica Neue', Helvetica,
+		STXihei, STHeiTi, Arial, Microsoft YaHei, sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	line-height: 1.5;
+	color: #333333;
+	background-color: white;
+	height: 100%;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.circle {
+	height: 0.25rem;
+	width: 0.25rem;
+	background: #1e5564;
+	opacity: 0.6;
+	border-radius: 50%;
+	line-height: 0.28rem;
+	text-align: center;
+	margin-right: 0.08rem;
+	font-size: calc(var(--cssfont) - 0.1rem);
+	color: #64daf4;
+}
+
+ul,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.spd-font {
+	font-size: 0.2rem !important;
+	/* font-size: calc(var(--cssfont)- 0.03rem); */
+}
+
+.spd-font-content {
+	font-size: calc(var(--cssfont)- 0.05rem);
+}
+
+.title-font {
+	font-size: calc(var(--cssfont) - 0.03rem);
+}
+
+.title-text {
+	float: right;
+	color: #64daf4;
+	padding-right: 0.2rem;
+}
+
+.title-box {
+	height: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-left {
+	font-size: calc(var(--cssfont) + 0.3rem);
+	height: 0.5rem;
+	width: 70%;
+	text-align: center;
+	flex-direction: column;
+	color: #64daf4;
+	align-items: center;
+}
+
+.plane-box-new .plane-header .name {
+	color: #64daf4;
+	padding: 0rem 0.1rem;
+}
+
+.box-new-016 {
+	height: calc(var(--cssname) * 0.64);
+}
+
+.box-new-013 {
+	height: calc(var(--cssname) * 0.3);
+}
+
+.box-new-02 {
+	height: calc(var(--cssname));
+}
+
+.box-new-03 {
+	height: calc(var(--cssname) * 2 + 0.1rem);
+}
+
+.box-new-04 {
+	height: calc(var(--cssname) * 2);
+}
+
+.box-new-05 {
+	height: calc(var(--cssname));
+}
+
+#scroll-content {
+	height: calc(var(--cssname) - 0.5rem);
+	overflow: hidden;
+	position: relative;
+}
+#scroll-content5 {
+	height: calc(var(--cssname) * 2 - 0.8rem);
+	overflow: hidden;
+	position: relative;
+}
+
+.plane-box-new {
+	background: #0d1733;
+	margin-left: 0.03rem;
+	margin-right: 0.03rem;
+	margin-bottom: 0.05rem;
+	border-radius: 0.08rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.plane-box-content {
+	background: #0d1733;
+	margin-bottom: 0.05rem;
+	margin-left: 0.02rem;
+	margin-right: 0.02rem;
+	border-radius: 0.08rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.focus-box {
+	position: relative;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.main-box {
+	position: relative;
+	height: 100%;
+	background: #0d1733;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.plane-box-new .plane-header {
+	position: relative;
+	height: 0.3rem;
+	margin-top: 0.02rem;
+}
+
+.plane-box-new .plane-content {
+	flex: 1;
+	flex-direction: column;
+	display: flex;
+}
+
+.plane-box-new .chart-box-new {
+	height: 100%;
+	flex: 1;
+}
+
+.box-01 {
+	border: 1px solid #64daf4;
+	height: 1rem;
+	margin: auto 0.2rem;
+	width: 1.9rem;
+	border-radius: 0.04rem;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+.box-01-text {
+	padding-top: 0.05rem;
+	text-align: center;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #fff;
+	padding-left: 0.02rem;
+	padding-right: 0.02rem;
+}
+
+.main-right {
+	width: 7.5rem;
+	padding: 0.1rem;
+}
+
+.main-right .main-right-title {
+	display: flex;
+}
+
+.main-right .main-right-title li {
+	font-size: calc(var(--cssfont));
+	color: #64daf4;
+	font-weight: bold;
+}
+
+.table-row {
+	display: flex;
+	color: #64daf4;
+	font-size: calc(var(--cssfont));
+	margin-top: 0.02rem;
+}
+
+.row-2 {
+	color: #64daf4;
+	width: 1.4rem;
+	text-align: center;
+}
+.row-33 {
+	border: 0.01rem solid #64daf4;
+	padding-right: 0.1rem;
+	width: 1.3rem;
+	overflow: hidden;
+	color: #64daf4;
+	text-align: right;
+}
+.row-22 {
+	border: 0.01rem solid #64daf4;
+	padding-right: 0.1rem;
+	width: 1.2rem;
+	overflow: hidden;
+	color: #64daf4;
+	text-align: right;
+}
+.row-11 {
+	border: 0.01rem solid #64daf4;
+	padding-left: 0.1rem;
+	width: 3rem;
+	overflow: hidden;
+	color: #64daf4;
+}
+
+.sliderbox {
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+.wd-u-6-24,
+.wd-u-11-24 {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+	text-rendering: auto;
+	float: left;
+}
+
+.wd-u-6-24 {
+	width: 26%;
+	*width: 25.969%;
+}
+
+.wd-u-11-24 {
+	width: 45.8333%;
+	*width: 45.8023%;
+}
+
+.leftPic {
+	background: url(../images/1.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.rightPic {
+	background: url(../images/33.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.topPic {
+	background: url(../images/22.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.downPic {
+	background: url(../images/23.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.t_mbox {
+	width: 100%;
+	height: 1rem;
+	position: relative;
+	margin: 0 auto;
+}
+.t_card {
+	background: rgba(19, 208, 178, 0.4);
+}
+.t_app {
+	background: rgba(19, 208, 178, 0.2);
+}
+.t_wave {
+	background: rgba(19, 208, 178, 0.2);
+}
+.t_pur {
+	background: rgba(19, 208, 178, 0.2);
+}
+.t_shousu {
+	background: rgba(19, 208, 178, 0.4);
+}
+
+.t_mbox i {
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.34rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 10%;
+	margin: auto;
+}
+.t_mbox h2 {
+	font-size: 0.2rem;
+	color: #fff;
+	position: absolute;
+	top: 16%;
+	left: 36%;
+}
+.t_mbox span {
+	font-size: 0.18rem;
+	color: #fff;
+	position: absolute;
+	top: 10%;
+	left: 34%;
+}
+.t_card i {
+	background: url(../images/pic_card.png) no-repeat;
+	background-size: 100% 100%;
+}
+.t_app i {
+	background: url(../images/pic_app.png) no-repeat;
+	background-size: 100% 100%;
+}
+.t_pur i {
+	background: url(../images/pic_pur.png) no-repeat;
+	background-size: 100% 100%;
+}
+.t_wave i {
+	background: url(../images/pic_wave.png) no-repeat;
+	background-size: 100% 100%;
+}
+.t_shousu i {
+	background: url(../images/pic_shousu.png) no-repeat;
+	background-size: 100% 100%;
+}
+.title-box-left {
+	margin: 10px 0.1rem 0;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.title-box-left .title-font {
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: top;
+}
+.title-box-left .title-span {
+	vertical-align: top;
+	width: 100px;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+#hospname {
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

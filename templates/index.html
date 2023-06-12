@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-cn">
+	<title>运营监控中心</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../static/css/index.css?v=4" />
+</head>
+
+<body style="background-color:#0d1733">
+	<div id="focusSwiper" class="wrap page-index-3-zhu">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="focus-box">
+					<div class="main-box">
+						<div class="title-box"
+							style="background: url(images/21.png) no-repeat center center;background-size: 50% 100%;">
+							<div class="title-box-left" style="width: 20%;">
+								<img id="logoimghos" style="width: 0.2rem;height: 0.2rem;float:left;margin:4px 5px 0 0;"
+									src="images/logo_null.png">
+								<p id="hospname" class="title-text title-font"></p>
+							</div>
+							<div id="maintilte" class="title-left"></div>
+							<div style="width:20%;margin: auto 0.1rem;">
+								<p id="companyname" class="title-text title-font"></p>
+								<img id="logoimg" style="width: 0.2rem;height: 0.2rem;float:right;margin-top:4px;"
+									src="images/logo_null.png">
+								<span class="spd-font title-text" id="currDate">2049-01-01 00:00:00</span>
+							</div>
+
+						</div>
+
+						<div class="wd-u-6-24" style="width: 30%;">
+							<aside class="plane-box-new box-new-02 last leftPic" style="float: left;width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>全院备货构成</div>
+								</header>
+								<section class="plane-content" style="flex: 1;flex-direction: row; display: flex;">
+									<div id="lotallDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>中心库备货构成</div>
+								</header>
+								<section class="plane-content" style="flex: 1;flex-direction: row; display: flex;">
+									<div id="lotdeptDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="float: left;width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>配送不足</div>
+								</header>
+								<section class="plane-content">
+									<div id="purLessDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>配送超出</div>
+								</header>
+								<section class="plane-content">
+									<div id="purMoreDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="float: left;width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>近效期提醒</div>
+								</header>
+								<section class="plane-content">
+									<div id="enddateDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>滞销提醒</div>
+								</header>
+								<section class="plane-content">
+									<div id="unsaleDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic">
+								<header class="plane-header">
+									<div class="name spd-font">>>近一周中心库出库/各科室消耗一览</div>
+								</header>
+								<section class="plane-content">
+									<div id="salWeekDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+						</div>
+						<div class="wd-u-11-24" style="width: 40%;">
+							<aside class="plane-box-new box-new-016 topPic">
+								<section class="plane-content">
+									<div id="rsPurDiv" class="chart-box-new"></div>
+								</section>
+								<section class="plane-content">
+									<div id="rsAppDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+
+							<aside class="plane-box-content box-new-013 topPic" style="float: left;width: 19.5%;">
+								<div class="t_mbox t_wave">
+									<i></i>
+									<span>品种过效期</span>
+									<h2 id="expenddateWare">0</h2>
+								</div>
+							</aside>
+							<aside class="plane-box-content box-new-013 topPic" style="float: left;width: 19.5%;">
+								<div class="t_mbox t_card">
+									<i></i>
+									<span>证照过效期</span>
+									<h2 id="expenddateLic">0</h2>
+								</div>
+							</aside>
+							<aside class="plane-box-content box-new-013 topPic" style="float: left;width: 19.5%;">
+								<div class="t_mbox t_pur">
+									<i></i>
+									<span>采购计划</span>
+									<h2 id="pur001">0</h2>
+								</div>
+							</aside>
+							<aside class="plane-box-content box-new-013 topPic" style="float: left;width: 19.5%;">
+								<div class="t_mbox t_shousu">
+									<i></i>
+									<span>手术计划</span>
+									<h2 id="pur002">0</h2>
+								</div>
+							</aside>
+							<aside class="plane-box-content box-new-013 topPic" style="width: 19.5%;">
+								<div class="t_mbox t_app">
+									<i></i>
+									<span>请领计划</span>
+									<h2 id="app001">0</h2>
+								</div>
+							</aside>
+
+							<aside class="plane-box-new box-new-03 downPic">
+								<header class="plane-header">
+									<div class="name spd-font">
+										<div class="select-list" id="titleDiv"></div>
+									</div>
+								</header>
+								<div class="main-right">
+									<ul class="main-right-title">
+										<li class="row-11" id="headDiv" style="text-align: center"></li>
+										<li class="row-22" id="midDiv1"></li>
+										<li class="row-22" id="midDiv2"></li>
+										<li class="row-33" id="midDiv3"></li>
+										<li class="row-33" id="endDiv"></li>
+									</ul>
+									<div class="swiper-container">
+										<div class="swiper-wrapper" id="scroll-content5">
+											<ul class="swiper-slide sliderbox consumables">
+											</ul>
+										</div>
+									</div>
+								</div>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic">
+								<header class="plane-header">
+									<div class="name spd-font">>>备货使用趋势</div>
+								</header>
+								<section class="plane-content">
+									<div id="inoutDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+						</div>
+						<div class="wd-u-6-24" style="width: 30%;">
+							<aside class="plane-box-new box-new-02 last leftPic" style="float: left;width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>当月采购构成</div>
+								</header>
+								<section class="plane-content" style="flex: 1;flex-direction: row; display: flex;">
+									<div id="inMonthDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-02 last leftPic" style="width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>当月消耗构成</div>
+								</header>
+								<section class="plane-content" style="flex: 1;flex-direction: row; display: flex;">
+									<div id="outMonthDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+
+							<aside class="plane-box-new box-new-04 rightPic" style="float: left;width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>消耗增长TOP10</div>
+								</header>
+								<section class="plane-content">
+									<div id="salUpTopDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+							<aside class="plane-box-new box-new-04 rightPic" style="width: 49%;">
+								<header class="plane-header">
+									<div class="name spd-font">>>消耗降低TOP10</div>
+								</header>
+								<section class="plane-content">
+									<div id="salDownTopDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+
+							<aside class="plane-box-new box-new-05 rightPic">
+								<header class="plane-header">
+									<div class="name spd-font">>>当天消耗标签数</div>
+								</header>
+								<section class="plane-content" style="flex: 1;flex-direction: row; display: flex;">
+									<div id="barDayDiv" class="chart-box-new"></div>
+								</section>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/js/jquery-1.11.1.min.js"></script>
+	<script src="../static/js/jquery.marquee.min.js"></script>
+	<script src="../static/js/echarts.min.js"></script>
+	<script src="../static/js/rem.js"></script>
+	<script src="../static/config.js"></script>
+	<script src="../static/js/mock-min.js"></script>
+	<script src="../static/js/mockData.js"></script>
+	<script src="../static/js/index.js"></script>
+</body>
+
+</html>
