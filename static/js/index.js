@@ -125,10 +125,10 @@ function getBaseInfo() {
                 document.title = data.maintilte;
                 $("#maintilte").html(data.maintilte);
                 $("#companyname").html(data.companyname);
-                $("#hospname").html(data.hospname);
-                $("#logoimg")[0].src = "images/logo_" + (data.logoimg || "null" ) + ".png";
-                $("#logoimghos")[0].src = "images/logo_" + (data.logoimghos || "null") + ".png";
-                $("link[rel='icon']")[0].href = "images/favicon_" + data.logoimghos +".ico";
+                // $("#hospname").html(data.hospname);
+                $("#logoimg")[0].src = "./static/images/logo_" + (data.logoimg || "null" ) + ".png";
+                // $("#logoimghos")[0].src = "./static/images/logo_" + (data.logoimghos || "null") + ".png";
+                // $("link[rel='icon']")[0].href = "./static/images/favicon_" + data.logoimghos +".ico";
             } else {
                 $("#maintilte").html("运营监控中心");
             }

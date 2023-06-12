@@ -6,7 +6,7 @@ Mock.mock(
 			logoimg: 'gy',
 			maintilte: '耗材SPD运营监控中心',
 			logoimghos: 'hnlxzyy',
-			companyname: '国药控股湖南有限公司',
+			companyname: '国药控股江西有限公司',
 			hospname: '湖南澧县中医医院',
 		},
 		msg: '查询成功',
