@@ -61,7 +61,7 @@ window.onload = function () {
     setInterval(loadRsPur, loadRsPurTime * 60000);
     setInterval(loadRsApp, loadRsAppTime * 60000);
     setInterval(loadNumInfo, loadNumInfoTime * 60000);
-    setInterval(loadMid, loadMidTime * 60000);
+    // setInterval(loadMid, loadMidTime * 60000);
     setInterval(loadInout, loadInoutTime * 60000);
     setInterval(loadInMonth, loadInMonthTime * 60000);
     setInterval(loadOutMonth, loadOutMonthTime * 60000);
@@ -1932,7 +1932,7 @@ function loadSalUpTop() {
                                         color: '#64daf4',
                                     },
                                     formatter: function (data) {
-                                        return x[data.dataIndex]+"-"+y[data.dataIndex] + "%";
+                                        return x[data.dataIndex]+"--"+y[data.dataIndex] + "%";
                                     }
                                 }
                             },

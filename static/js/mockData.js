@@ -818,43 +818,45 @@ Mock.mock('srceenRest/getSalUpTop', {
 	code: 1,
 	data: [
 		{
-			PERRATE: 2500000,
-			GOODNAME: '积水医疗 CP 2000/3000血凝杯',
+			PERRATE: 100,
+			GOODNAME: '积水医疗 CP 血凝杯',
+			// GOODNAME: '积水医疗 CP 2000/3000血凝杯',
 		},
 		{
-			PERRATE: 432000,
+			PERRATE: 100,
 			GOODNAME: 'STAR导电加样尖',
 		},
 		{
-			PERRATE: 245000,
-			GOODNAME: '一次性使用医用橡胶检查手套',
+			PERRATE: 100,
+			GOODNAME: '一次性医用橡胶检查手套',
+			// GOODNAME: '一次性使用医用橡胶检查手套',
 		},
 		{
-			PERRATE: 160000,
+			PERRATE: 86,
 			GOODNAME: '动静脉留置针',
 		},
 		{
-			PERRATE: 103500,
+			PERRATE: 74,
 			GOODNAME: '一次性使用鼻氧管',
 		},
 		{
-			PERRATE: 100000,
+			PERRATE: 66,
 			GOODNAME: '针灸针',
 		},
 		{
-			PERRATE: 100000,
+			PERRATE: 54,
 			GOODNAME: '一次性使用心电电极',
 		},
 		{
-			PERRATE: 74000,
+			PERRATE: 50,
 			GOODNAME: '一次性使用中单',
 		},
 		{
-			PERRATE: 65200,
+			PERRATE: 45.5,
 			GOODNAME: '定制式活动义齿',
 		},
 		{
-			PERRATE: 54000,
+			PERRATE: 22.5,
 			GOODNAME: '无菌粘贴手术膜',
 		},
 	],
@@ -866,11 +868,13 @@ Mock.mock('srceenRest/getSalDownTop', {
 	data: [
 		{
 			PERRATE: -100,
-			GOODNAME: '血气测定试剂盒（电极法）GEM Premier 3000 PAK',
+			GOODNAME: '血气测定试剂盒GEM',
+			// GOODNAME: '血气测定试剂盒（电极法）GEM Premier 3000 PAK',
 		},
 		{
 			PERRATE: -100,
-			GOODNAME: '促甲状腺素测定试剂盒（直接化学发光法）',
+			GOODNAME: '促甲状腺素测定试剂盒',
+			// GOODNAME: '促甲状腺素测定试剂盒（直接化学发光法）',
 		},
 		{
 			PERRATE: -100,
@@ -886,7 +890,8 @@ Mock.mock('srceenRest/getSalDownTop', {
 		},
 		{
 			PERRATE: -100,
-			GOODNAME: '类风湿因子（RF)检测试剂盒（免疫散射比浊法）',
+			GOODNAME: '类风湿因子(RF)检测试剂盒',
+			// GOODNAME: '类风湿因子（RF)检测试剂盒（免疫散射比浊法）',
 		},
 		{
 			PERRATE: -100,
@@ -898,11 +903,13 @@ Mock.mock('srceenRest/getSalDownTop', {
 		},
 		{
 			PERRATE: -100,
-			GOODNAME: '尿微量白蛋白测定试剂盒（免疫比浊法）',
+			GOODNAME: '尿微量白蛋白测定试剂盒',
+			// GOODNAME: '尿微量白蛋白测定试剂盒（免疫比浊法）',
 		},
 		{
 			PERRATE: -100,
-			GOODNAME: '碱性磷酸酶测定试剂盒(NPP底物-AMP缓冲液法)',
+			GOODNAME: '碱性磷酸酶测定试剂盒',
+			// GOODNAME: '碱性磷酸酶测定试剂盒(NPP底物-AMP缓冲液法)',
 		},
 	],
 	msg: '查询成功',
